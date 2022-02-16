@@ -32,10 +32,10 @@ for line in f: #for every line in the file
     if '11/Apr/1995:00:00:16' in line: #starts the count at six months prior to the end of the file
         startMonthCount = True
         
-    if startMonthCount == True
+    if startMonthCount == True:
         countMonthLine+=1 #counts the last six months
         
-print("Number of requests/lines from the last 6 months of the log file:", countMonthline)
+print("Number of requests/lines from the last 6 months of the log file:", countMonthLine)
 print("Total Number of requests/lines in the log file:", countLine)
     
     
