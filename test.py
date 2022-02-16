@@ -11,3 +11,9 @@ if not(os.path.isfile('awslog.log')):
     
 f = open("awslog.log", "r")
 #opens the log file, now named f
+
+text = f.read()
+#reads from file into variable named text
+
+textList = text.split("\n")
+#splits text by line
