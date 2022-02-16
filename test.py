@@ -24,12 +24,19 @@ f = open("awslog.log", "r")
 countLine = 0
 countMonthLine = 0
 startMonthCount = False
+#sets up variables for (in order) total line count, total line count of the last 6 months, the trigger for the start of counting the last six months
 
-for line in f:
-    countLine+=1
-    if 
+for line in f: #for every line in the file
+    countLine+=1 #starts counting lines
+    
+    if '11/Apr/1995:00:00:16' in line: #starts the count at six months prior to the end of the file
+        startMonthCount = True
+        
     if startMonthCount == True
-        countMonthLine+=1
+        countMonthLine+=1 #counts the last six months
+        
+print("Number of requests/lines from the last 6 months of the log file:", countMonthline)
+print("Total Number of requests/lines in the log file:", countLine)
     
     
     
