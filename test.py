@@ -9,3 +9,5 @@ if not(os.path.isfile('awslog.log')):
     print('File downloaded. Resuming.')
     # checks for file, downloads if not there
     
+f = open("awslog.log", "r")
+#opens the log file, now named f
