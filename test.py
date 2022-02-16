@@ -12,8 +12,25 @@ if not(os.path.isfile('awslog.log')):
 f = open("awslog.log", "r")
 #opens the log file, now named f
 
-text = f.read()
+#text = f.read()
 #reads from file into variable named text
 
-textList = text.split("\n")
+#textList = text.split("\n")
 #splits text by line
+
+#textList = text.readlines()
+#maybe alternative read lines?
+
+countLine = 0
+countMonthLine = 0
+startMonthCount = False
+
+for line in f:
+    countLine+=1
+    if 
+    if startMonthCount == True
+        countMonthLine+=1
+    
+    
+    
+    
